@@ -7,5 +7,5 @@ RUN apk add --no-cache --virtual .build-deps \
     build-base \
     ca-certificates
 RUN pipenv install --system
-COPY main.py main.py
-CMD ["uvicorn", "main:app"]
+COPY main.py .
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
