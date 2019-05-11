@@ -19,7 +19,7 @@ kubectl apply -f service.yaml
 
 ## Examine
 
-You can test easily if minikunbe.
+You can test easily if minikube.
 
 ```sh
 $ curl $(minikube service api-service --url)/health
